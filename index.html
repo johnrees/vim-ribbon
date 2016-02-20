@@ -2,19 +2,19 @@
 <html>
 <head>
   <title>VIM RIBBON</title>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.0.52/wavesurfer.min.js"></script>
+  <style type="text/css">
+    #waveform {
+      width: 1024px !important;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
 </head>
 <body>
 
-<div id="waveform"></div>
+  <div id="waveform"></div>
+  <canvas id="canvas" height="100" width="1024"></canvas>
 
-<script type="text/javascript">
-  var wavesurfer = WaveSurfer.create({
-    container: '#waveform',
-    waveColor: 'violet',
-    progressColor: 'purple'
-  });
-  wavesurfer.load('Dogg-1plPyJdXKIY.mp3');
-</script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.0.52/wavesurfer.min.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
